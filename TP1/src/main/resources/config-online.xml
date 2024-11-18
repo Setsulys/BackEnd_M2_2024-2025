@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id = "DroneDelivery" class="fr.uge.jee.onlineshop.DroneDelivery"/>
+    <bean id = "StandardDelivery" class ="fr.uge.jee.onlineshop.StandardDelivery">
+        <constructor-arg value="5"/>
+    </bean>
+    <bean id = "RefundInsurance" class ="fr.uge.jee.onlineshop.RefundInsurance">
+        <constructor-arg value="true"/>
+    </bean>
+    <bean id= "RobInsurance" class="fr.uge.jee.onlineshop.RobInsurance">
+        <constructor-arg value="true"/>
+    </bean>
+
+
+
+
+    <bean id="OnlineShop" class="fr.uge.jee.onlineshop.OnlineShop">
+        <constructor-arg value="Amazon"/>
+        <constructor-arg>
+            <set>
+                <ref bean="DroneDelivery"/>
+                <ref bean="StandardDelivery"/>
+            </set>
+        </constructor-arg>
+        <constructor-arg>
+            <set>
+                <ref bean="RefundInsurance"/>
+                <ref bean="RobInsurance"/>
+            </set>
+        </constructor-arg>
+    </bean>
+
+</beans>

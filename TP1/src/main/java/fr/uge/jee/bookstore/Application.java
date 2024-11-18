@@ -11,3 +11,8 @@ public class Application {
         System.out.println(library.toString());
     }
 }
+/**
+ *
+ * Qu'observez vous ?
+ * les constructeurs sont remplis automatiquement
+ */
