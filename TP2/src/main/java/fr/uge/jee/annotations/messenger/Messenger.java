@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Messenger {
     //A123G32G234H34245234
-    @Value("#{environement.MESSENGER_TOKEN}")
+    @Value("#{environment.LOGNAME}")
     private String token;
 
     public void send(String message){
