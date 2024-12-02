@@ -1,0 +1,350 @@
+02-Dec-2024 10:35:29.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.1.33
+02-Dec-2024 10:35:29.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 7 2024 22:28:55 UTC
+02-Dec-2024 10:35:29.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.1.33.0
+02-Dec-2024 10:35:29.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+02-Dec-2024 10:35:29.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.1.0-0.deb11.22-amd64
+02-Dec-2024 10:35:29.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+02-Dec-2024 10:35:29.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/local/apps/alternatives/java/jdk-23
+02-Dec-2024 10:35:29.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      23+37-2369
+02-Dec-2024 10:35:29.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+02-Dec-2024 10:35:29.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:35:29.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/conf/logging.properties
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+02-Dec-2024 10:35:29.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Dec-2024 10:35:29.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Dec-2024 10:35:29.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:35:29.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:35:29.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/temp
+02-Dec-2024 10:35:29.074 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+02-Dec-2024 10:35:29.365 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:35:29.434 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [645] millisecondes
+02-Dec-2024 10:35:29.477 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+02-Dec-2024 10:35:29.477 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.1.33]
+02-Dec-2024 10:35:29.498 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:35:29.803 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [303] ms
+02-Dec-2024 10:35:29.804 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples]
+02-Dec-2024 10:35:30.304 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples] de l'application web s'est terminé en [500] ms
+02-Dec-2024 10:35:30.305 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs]
+02-Dec-2024 10:35:30.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs] de l'application web s'est terminé en [19] ms
+02-Dec-2024 10:35:30.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager]
+02-Dec-2024 10:35:30.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager] de l'application web s'est terminé en [32] ms
+02-Dec-2024 10:35:30.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager]
+02-Dec-2024 10:35:30.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager] de l'application web s'est terminé en [28] ms
+02-Dec-2024 10:35:30.387 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT]
+02-Dec-2024 10:35:30.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT] de l'application web s'est terminé en [17] ms
+02-Dec-2024 10:35:30.407 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:35:30.415 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [980] millisecondes
+02-Dec-2024 10:36:14.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.1.33
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 7 2024 22:28:55 UTC
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.1.33.0
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.1.0-0.deb11.22-amd64
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/local/apps/alternatives/java/jdk-23
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      23+37-2369
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:36:14.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:36:14.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/conf/logging.properties
+02-Dec-2024 10:36:14.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2024 10:36:14.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2024 10:36:14.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:36:14.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/temp
+02-Dec-2024 10:36:14.054 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+02-Dec-2024 10:36:14.291 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:36:14.348 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1304)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1317)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1028)
+		... 11 more
+02-Dec-2024 10:36:14.349 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [423] millisecondes
+02-Dec-2024 10:36:14.382 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+02-Dec-2024 10:36:14.382 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.1.33]
+02-Dec-2024 10:36:14.396 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:36:14.588 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [191] ms
+02-Dec-2024 10:36:14.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples]
+02-Dec-2024 10:36:14.823 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples] de l'application web s'est terminé en [234] ms
+02-Dec-2024 10:36:14.823 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs]
+02-Dec-2024 10:36:14.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs] de l'application web s'est terminé en [13] ms
+02-Dec-2024 10:36:14.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager]
+02-Dec-2024 10:36:14.856 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager] de l'application web s'est terminé en [20] ms
+02-Dec-2024 10:36:14.857 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager]
+02-Dec-2024 10:36:14.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager] de l'application web s'est terminé en [23] ms
+02-Dec-2024 10:36:14.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT]
+02-Dec-2024 10:36:14.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT] de l'application web s'est terminé en [15] ms
+02-Dec-2024 10:36:14.899 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [549] millisecondes
+02-Dec-2024 10:36:14.902 SEVERE [main] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:389)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:276)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+02-Dec-2024 10:36:14.902 INFO [main] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+02-Dec-2024 10:36:14.902 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+02-Dec-2024 10:36:14.926 INFO [main] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:36:14.927 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:36:50.454 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:37:01.218 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:37:01.278 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [60] ms
+02-Dec-2024 10:37:41.304 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:37:41.337 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:37:41.398 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [61] ms
+02-Dec-2024 10:38:51.436 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:39:01.485 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:39:01.560 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [76] ms
+02-Dec-2024 10:40:41.631 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:40:41.666 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:40:41.731 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [65] ms
+02-Dec-2024 10:42:41.819 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:42:51.865 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:42:51.940 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [75] ms
+02-Dec-2024 10:45:12.038 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:45:12.076 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:45:12.143 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [67] ms
+02-Dec-2024 10:51:12.388 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:51:12.425 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:51:12.481 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [56] ms
+02-Dec-2024 10:53:02.560 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:53:12.604 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:53:12.662 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [58] ms
+02-Dec-2024 10:53:52.688 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:54:02.726 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:54:02.787 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [61] ms
+02-Dec-2024 10:54:06.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.1.33
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 7 2024 22:28:55 UTC
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.1.33.0
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.1.0-0.deb11.22-amd64
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/local/apps/alternatives/java/jdk-23
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      23+37-2369
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:54:06.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:54:06.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/conf/logging.properties
+02-Dec-2024 10:54:06.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2024 10:54:06.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2024 10:54:06.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2024 10:54:06.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-Dec-2024 10:54:06.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Dec-2024 10:54:06.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+02-Dec-2024 10:54:06.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+02-Dec-2024 10:54:06.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Dec-2024 10:54:06.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Dec-2024 10:54:06.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:54:06.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:54:06.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/temp
+02-Dec-2024 10:54:06.968 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+02-Dec-2024 10:54:07.197 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:54:07.317 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1304)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1317)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1028)
+		... 11 more
+02-Dec-2024 10:54:07.318 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [483] millisecondes
+02-Dec-2024 10:54:07.342 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+02-Dec-2024 10:54:07.342 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.1.33]
+02-Dec-2024 10:54:07.355 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:54:07.543 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [186] ms
+02-Dec-2024 10:54:07.543 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples]
+02-Dec-2024 10:54:07.807 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples] de l'application web s'est terminé en [263] ms
+02-Dec-2024 10:54:07.807 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs]
+02-Dec-2024 10:54:07.825 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs] de l'application web s'est terminé en [18] ms
+02-Dec-2024 10:54:07.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager]
+02-Dec-2024 10:54:07.849 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager] de l'application web s'est terminé en [24] ms
+02-Dec-2024 10:54:07.849 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager]
+02-Dec-2024 10:54:07.872 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager] de l'application web s'est terminé en [23] ms
+02-Dec-2024 10:54:07.873 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT]
+02-Dec-2024 10:54:07.887 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT] de l'application web s'est terminé en [15] ms
+02-Dec-2024 10:54:07.891 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [572] millisecondes
+02-Dec-2024 10:54:07.893 SEVERE [main] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:389)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:276)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+02-Dec-2024 10:54:07.894 INFO [main] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+02-Dec-2024 10:54:07.894 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+02-Dec-2024 10:54:07.909 INFO [main] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:54:07.910 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:55:22.838 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 10:55:32.878 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:55:32.935 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [57] ms
+02-Dec-2024 10:55:34.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.1.33
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 7 2024 22:28:55 UTC
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.1.33.0
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.1.0-0.deb11.22-amd64
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/local/apps/alternatives/java/jdk-23
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      23+37-2369
+02-Dec-2024 10:55:34.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+02-Dec-2024 10:55:34.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:55:34.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:55:34.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/conf/logging.properties
+02-Dec-2024 10:55:34.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2024 10:55:34.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2024 10:55:34.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2024 10:55:34.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-Dec-2024 10:55:34.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+02-Dec-2024 10:55:34.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+02-Dec-2024 10:55:34.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+02-Dec-2024 10:55:34.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-Dec-2024 10:55:34.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-Dec-2024 10:55:34.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:55:34.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33
+02-Dec-2024 10:55:34.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/temp
+02-Dec-2024 10:55:34.761 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+02-Dec-2024 10:55:35.026 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:55:35.159 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:957)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:708)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:194)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1304)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1317)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1028)
+		... 11 more
+02-Dec-2024 10:55:35.162 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [531] millisecondes
+02-Dec-2024 10:55:35.216 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+02-Dec-2024 10:55:35.217 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.1.33]
+02-Dec-2024 10:55:35.232 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 10:55:35.457 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [223] ms
+02-Dec-2024 10:55:35.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples]
+02-Dec-2024 10:55:35.713 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/examples] de l'application web s'est terminé en [255] ms
+02-Dec-2024 10:55:35.713 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs]
+02-Dec-2024 10:55:35.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/docs] de l'application web s'est terminé en [15] ms
+02-Dec-2024 10:55:35.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager]
+02-Dec-2024 10:55:35.748 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/host-manager] de l'application web s'est terminé en [20] ms
+02-Dec-2024 10:55:35.748 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager]
+02-Dec-2024 10:55:35.765 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/manager] de l'application web s'est terminé en [17] ms
+02-Dec-2024 10:55:35.765 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT]
+02-Dec-2024 10:55:35.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/ROOT] de l'application web s'est terminé en [13] ms
+02-Dec-2024 10:55:35.781 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [615] millisecondes
+02-Dec-2024 10:55:35.784 SEVERE [main] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:565)
+		at java.base/sun.nio.ch.Net.bind(Net.java:554)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:389)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:276)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:533)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:847)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:795)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+02-Dec-2024 10:55:35.784 INFO [main] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+02-Dec-2024 10:55:35.784 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+02-Dec-2024 10:55:35.797 INFO [main] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 10:55:35.797 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 11:07:13.396 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 11:07:23.428 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 11:07:23.489 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [61] ms
+02-Dec-2024 11:08:33.528 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 11:08:33.567 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 11:08:33.634 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [67] ms
+02-Dec-2024 11:10:23.685 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
+02-Dec-2024 11:10:33.715 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
+02-Dec-2024 11:10:33.764 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [49] ms
+02-Dec-2024 11:11:08.494 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+02-Dec-2024 11:11:08.501 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+02-Dec-2024 11:11:08.509 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+02-Dec-2024 11:11:08.512 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]

@@ -333,3 +333,7 @@
 27-Nov-2024 12:33:42.987 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/App]
 27-Nov-2024 12:33:43.024 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] de l'application web
 27-Nov-2024 12:33:43.080 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/2ind2/steven.ly/Documents/Backend/apache-tomcat-10.1.33/webapps/App.war] s'est terminé en [56] ms
+27-Nov-2024 12:46:39.428 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+27-Nov-2024 12:46:39.432 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+27-Nov-2024 12:46:39.441 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+27-Nov-2024 12:46:39.444 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
