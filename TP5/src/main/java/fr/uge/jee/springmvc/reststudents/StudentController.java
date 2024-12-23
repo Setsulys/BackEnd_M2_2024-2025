@@ -11,10 +11,10 @@ import java.util.Map;
 @RestController
 public class StudentController {
     private final Map<Long,Student> students = Map.of(
-            1L,new Student(1,"Yassine","Benmechich"),
-            2L,new Student(2,"Christophe","Haidamous"),
-            3L,new Student(3,"Alexandre","Kingué"),
-            4L,new Student(4,"Steven","Ly"));
+            1L,new Student(1L,"Yassine","Benmechich"),
+            2L,new Student(2L,"Christophe","Haidamous"),
+            3L,new Student(3L,"Alexandre","Kingué"),
+            4L,new Student(4L,"Steven","Ly"));
 
     @GetMapping("/students/{id}")
     public Student getStudent(@PathVariable("id") long id) {
