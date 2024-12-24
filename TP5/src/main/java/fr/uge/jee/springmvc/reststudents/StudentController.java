@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -24,6 +26,18 @@ public class StudentController {
                     HttpStatus.NOT_FOUND, "No student with id ("+id+")");
         } else {
             return student;
+        }
+    }
+
+    @GetMapping("/students")
+    public List<Student> getStudents() {
+        List<Student> studentslist = new ArrayList<>(students.values());
+        if(studentslist.isEmpty()){
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "No students found");
+        }
+        else{
+            return studentslist;
         }
     }
 }

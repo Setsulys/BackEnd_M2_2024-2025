@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pokematch</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form th:action="@{/pokematch}" method="post" th:object="${person}">
+    <h2>Pokematcher</h2>
+
+    <div>
+        <label for="firstname">Firstname:</label>
+        <input id="firstname" type="text" th:field="*{firstName}">
+        <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Invalid firstname</span>
+    </div>
+
+    <div>
+        <label for="lastname">Lastname:</label>
+        <input id="lastname" type="text" th:field="*{lastName}">
+        <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Invalid lastname</span>
+    </div>
+
+    <div>
+        <button type="submit">Compute</button>
+    </div>
+</form>
+<div th:if="${favouritePokemon != null}">
+    <p>Your fetish Pokémon is: <strong th:text="${favouritePokemon}"></strong></p>
+    <img th:src="@{${pokemonImage}}" alt="Image api" />
+    <img th:src="@{${pokemonImageDl}}" alt="Image téléchargée" />
+</div>
+<ul>
+    <li th:each="pokemon : ${bestpokemons}" th:text="${pokemon}"></li>
+</ul>
+</body>
+</html>
