@@ -29,6 +29,8 @@
     <img th:src="@{${pokemonImage}}" alt="Image api" />
     <img th:src="@{${pokemonImageDl}}" alt="Image téléchargée" />
 </div>
+
+<p th:if="${bestpokemons!=null }">Most Popular pokemons are:</p>
 <ul>
     <li th:each="pokemon : ${bestpokemons}" th:text="${pokemon}"></li>
 </ul>

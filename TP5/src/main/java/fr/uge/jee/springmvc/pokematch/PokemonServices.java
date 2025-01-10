@@ -154,38 +154,4 @@ public class PokemonServices {
             return null;
         }
     }
-
-
-
-    private static final HashMap<Integer, BufferedImage> imageCache= new HashMap<>();
-
-    public static String getFrontImage(int pokemonId) {
-        var img = imageCache.putIfAbsent(pokemonId, downloadAndCacheImage(pokemonId));
-        return imgToBase64String(img);
-    }
-    public static String imgToBase64String(BufferedImage img)
-    {
-        final ByteArrayOutputStream os = new ByteArrayOutputStream();
-        try
-        {
-            ImageIO.write(img, "png", os);
-            return Base64.getEncoder().encodeToString(os.toByteArray());
-        }
-        catch (final IOException ioe)
-        {
-            throw new UncheckedIOException(ioe);
-        }
-    }
-
-    private static BufferedImage downloadAndCacheImage(int pokemonId) {
-        try {
-            URL imageUrl = new URL("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + pokemonId + ".png");
-            BufferedImage image = ImageIO.read(imageUrl);
-            imageCache.put(pokemonId, image);
-            return image;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
 }

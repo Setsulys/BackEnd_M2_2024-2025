@@ -41,14 +41,15 @@ public class PokematchController {
      */
     @PostMapping("/pokematch")
     public String processForm(@Valid @ModelAttribute Person parameter, BindingResult bindingResult, Model model){
-        if(bindingResult.hasErrors()){
-            return "index";
-        }
         var pokemon = pokemonServices.findFavoritePokemon(parameter);
-        model.addAttribute("favouritePokemon", pokemon);
+
         model.addAttribute("bestpokemons",pokemonServices.getTopPokemons());
         model.addAttribute("pokemonImage",pokemonServices.getImageUrl(pokemon));
         model.addAttribute("pokemonImageDl",pokemonServices.getPokemonImage(pokemon));
+        if(bindingResult.hasErrors()){
+            return "index";
+        }
+        model.addAttribute("favouritePokemon", pokemon);
         return "index";
     }
 }

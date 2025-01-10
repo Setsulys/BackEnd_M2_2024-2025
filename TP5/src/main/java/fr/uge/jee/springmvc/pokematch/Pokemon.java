@@ -1,10 +1,9 @@
 package fr.uge.jee.springmvc.pokematch;
 
-
 public class Pokemon{
-    String name;
-    String url;
-    int id;
+    private final String name;
+    private final String url;
+    private final int id;
 
     Pokemon(String name,String url){
         this.name=name;
