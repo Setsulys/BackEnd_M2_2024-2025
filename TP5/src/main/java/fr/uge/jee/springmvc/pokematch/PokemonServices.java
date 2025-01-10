@@ -3,12 +3,8 @@ package fr.uge.jee.springmvc.pokematch;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -16,9 +12,6 @@ import java.nio.file.StandardCopyOption;
 import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
-import java.io.ByteArrayOutputStream;
-
 import java.net.URL;
 
 
@@ -47,7 +40,7 @@ public class PokemonServices {
      */
     private List<Pokemon> fetchPokemons() {
         var response = webClient.get()
-                .uri("https://pokeapi.co/api/v2/pokemon?limit=151")
+                .uri("https://pokeapi.co/api/v2/pokemon?limit=40")
                 .retrieve()
                 .bodyToMono(PokemonResponse.class)
                 .block();
@@ -64,17 +57,7 @@ public class PokemonServices {
         if(pokemons == null || pokemons.isEmpty()){
             throw new IllegalStateException("No pokemons found");
         }
-
-
-        Pokemon bestPokemon = pokemons.get(0);
-        int minDifference = Math.abs(bestPokemon.hashCode() - person.hashCode());
-        for (Pokemon pokemon : pokemons) {
-            int difference = Math.abs(pokemon.hashCode() - person.hashCode());
-            if (difference < minDifference) {
-                bestPokemon=pokemon;
-                minDifference = difference;
-            }
-        }
+        var bestPokemon= pokemons.stream().min(Comparator.comparing(e->Math.abs(e.hashCode() - person.hashCode()))).orElse(null);
         incrementPopularity(bestPokemon);
         return bestPokemon;
     }

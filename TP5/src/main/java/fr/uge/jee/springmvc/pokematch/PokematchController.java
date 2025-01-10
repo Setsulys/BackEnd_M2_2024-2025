@@ -12,6 +12,7 @@ import java.util.List;
 @Controller
 public class PokematchController {
     private final PokemonServices pokemonServices;
+    private List<Pokemon> topPokemon;
 
     @Autowired
     PokematchController(PokemonServices pokemonServices){
@@ -41,15 +42,17 @@ public class PokematchController {
      */
     @PostMapping("/pokematch")
     public String processForm(@Valid @ModelAttribute Person parameter, BindingResult bindingResult, Model model){
-        var pokemon = pokemonServices.findFavoritePokemon(parameter);
-
-        model.addAttribute("bestpokemons",pokemonServices.getTopPokemons());
-        model.addAttribute("pokemonImage",pokemonServices.getImageUrl(pokemon));
-        model.addAttribute("pokemonImageDl",pokemonServices.getPokemonImage(pokemon));
+        model.addAttribute("bestpokemons",topPokemon);
         if(bindingResult.hasErrors()){
             return "index";
         }
+        var pokemon = pokemonServices.findFavoritePokemon(parameter);
+        topPokemon = pokemonServices.getTopPokemons();
+        model.addAttribute("pokemonImage",pokemonServices.getImageUrl(pokemon));
+        model.addAttribute("pokemonImageDl",pokemonServices.getPokemonImage(pokemon));
+        model.addAttribute("bestpokemons",topPokemon);
         model.addAttribute("favouritePokemon", pokemon);
         return "index";
     }
+
 }
