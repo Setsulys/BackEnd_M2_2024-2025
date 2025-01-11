@@ -18,8 +18,6 @@ public class PokematchController {
     PokematchController(PokemonServices pokemonServices){
         this.pokemonServices = pokemonServices;
     }
-    //@Autowired
-    //BestPokemonTracker bestPokemonTracker;
 
     /**
      * Get mapping to show the form of the application
@@ -49,8 +47,8 @@ public class PokematchController {
         var pokemon = pokemonServices.findFavoritePokemon(parameter);
         topPokemon = pokemonServices.getTopPokemons();
         model.addAttribute("pokemonImage",pokemonServices.getImageUrl(pokemon));
-        model.addAttribute("pokemonImageDl",pokemonServices.getPokemonImage(pokemon));
         model.addAttribute("bestpokemons",topPokemon);
+        model.addAttribute("imagedlbyte",pokemonServices.getPokemonImage64(pokemon));
         model.addAttribute("favouritePokemon", pokemon);
         return "index";
     }

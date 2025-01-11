@@ -26,8 +26,14 @@
 </form>
 <div th:if="${favouritePokemon != null}">
     <p>Your fetish Pokémon is: <strong th:text="${favouritePokemon}"></strong></p>
+    <figure>
     <img th:src="@{${pokemonImage}}" alt="Image api" />
-    <img th:src="@{${pokemonImageDl}}" alt="Image téléchargée" />
+    <figcaption>Image API</figcaption>
+    </figure>
+    <figure>
+    <img th:src="'data:image/jpeg;base64,' + @{${imagedlbyte}}" alt="Image téléchargée" />
+    <figcaption>Image Téléchargé</figcaption>
+    </figure>
 </div>
 
 <p th:if="${bestpokemons!=null }">Most Popular pokemons are:</p>
@@ -36,3 +42,21 @@
 </ul>
 </body>
 </html>
+<style>
+    .image-container {
+        display: flex;
+        gap: 20px;
+    }
+    figure {
+        display: inline-block;
+        text-align: center;
+    }
+    figcaption {
+        display: block;
+        margin-top: 10px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>

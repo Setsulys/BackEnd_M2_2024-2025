@@ -12,6 +12,12 @@ public class Pokemon{
         this.id=Integer.parseInt(stringId[stringId.length-1]);
     }
 
+    Pokemon(String name,String url,int id){
+        this.name=name;
+        this.url=url;
+        this.id=id;
+    }
+
 
     @Override
     public String toString() {

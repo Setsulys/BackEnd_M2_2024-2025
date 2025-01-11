@@ -3,17 +3,10 @@ package fr.uge.jee.springmvc.pokematch;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
+import reactor.core.publisher.Mono;
 import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.net.URL;
-
 
 @Service
 public class PokemonServices {
@@ -25,12 +18,15 @@ public class PokemonServices {
     private final HashMap<Pokemon, Integer> pokemonCountMap = new HashMap<>();
     private final int maxPokemonCount;
     private final HashMap<Pokemon,String> pokemonImageCache = new HashMap<>();
+    private final HashMap<Pokemon,byte[]> imageCache = new HashMap<>();
     private record PokemonResponse(List<Pokemon> results) {
+
     }
 
     public PokemonServices(WebClient webClient,@Value("${pokemon.top.count}") int maxPokemonCount) {
         this.webClient = webClient;
-        this.pokemons = fetchPokemons();
+//        this.pokemons = fetchPokemons();
+        this.pokemons = fetchPokemonsFromGraphQL();
         this.maxPokemonCount = maxPokemonCount;
     }
 
@@ -108,33 +104,80 @@ public class PokemonServices {
     /// Show image of pokemon by downloading
 
     /**
-     * Check if the pokemon was already downloaded in the cache if not it will download
+     * check if the image is in the cache, if not, it will download the image.
+     * After all it will convert image to string with base64 encoder
      * @param pokemon
      * @return
      */
-    public String getPokemonImage(Pokemon pokemon){
-        return pokemonImageCache.putIfAbsent(pokemon, downloadImage(pokemon));
+    public String getPokemonImage64(Pokemon pokemon){
+        byte[] imageBytes = imageCache.get(pokemon);
+        if(imageBytes == null){
+            System.out.println("Downloading image...");
+            imageBytes = downloadbyteImage(pokemon);
+            imageCache.put(pokemon, imageBytes);
+        }
+        return Base64.getEncoder().encodeToString(imageBytes);
     }
-
 
     /**
-     * Download the pokemon Image at ressources/static/images/.
+     * Download image in byte array form
      * @param pokemon
      * @return
      */
-    private String downloadImage(Pokemon pokemon){
-        String savedir = "src/main/resources/static/images";
-        String fileName = pokemon.toString()+".png";
-        Path targetPath = Paths.get(savedir,fileName);
-        try{
-            var url = new URL(getImageUrl(pokemon));
-            try(InputStream in = url.openStream()){
-                Files.copy(in, targetPath, StandardCopyOption.REPLACE_EXISTING);
+    public byte[] downloadbyteImage(Pokemon pokemon){
+        Mono<byte[]> imageBytesMono = webClient.get()
+                .uri(getImageUrl(pokemon))
+                .retrieve()
+                .bodyToMono(byte[].class);
+        return imageBytesMono.block();
+    }
+
+
+    private record GraphQLPokemonResponse(Data data) {
+        record Data(List<PokemonEntry> pokemon_v2_pokemon) {}
+        record PokemonEntry(String name, int id) {
+            /**
+             * Convert PokemonEntry to pokemon
+             * @return
+             */
+            Pokemon toPokemon() {
+                String url = "https://pokeapi.co/api/v2/pokemon/" + id;
+                return new Pokemon(name, url,id);
             }
-            return "/images/"+fileName;
-        }catch(IOException e){
-            System.out.println("Couldn't download image");
-            return null;
+        }
+
+        /**
+         * Get data of data and put it in a list of pokemon
+         * @return
+         */
+        public List<Pokemon> pokemons() {
+            return data.pokemon_v2_pokemon().stream()
+                    .map(PokemonEntry::toPokemon)
+                    .toList();
         }
     }
+
+    /**
+     * Fetching pokemon from graphql
+     * @return
+     */
+    private List<Pokemon> fetchPokemonsFromGraphQL() {
+        String query = """
+        {
+          pokemon_v2_pokemon(limit: 40) {
+            name
+            id
+          }
+        }
+        """;
+        var response = webClient.post()
+                .uri("https://beta.pokeapi.co/graphql/v1beta")
+                .header("Content-Type", "application/json")
+                .bodyValue(Map.of("query", query))
+                .retrieve()
+                .bodyToMono(GraphQLPokemonResponse.class)
+                .block();
+        return response.pokemons();
+    }
+
 }
