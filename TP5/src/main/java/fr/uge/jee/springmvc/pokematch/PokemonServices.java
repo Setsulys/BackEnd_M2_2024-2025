@@ -19,9 +19,26 @@ public class PokemonServices {
     private final int maxPokemonCount;
     private final HashMap<Pokemon,String> pokemonImageCache = new HashMap<>();
     private final HashMap<Pokemon,byte[]> imageCache = new HashMap<>();
+
+
     private record PokemonResponse(List<Pokemon> results) {
 
     }
+    private record GraphQLPokemonResponse(Data data) {
+        record Data(List<PokemonEntry> pokemon_v2_pokemon) {}
+        record PokemonEntry(String name,String url, int id) {
+        }
+        /**
+         * Get data of data and put it in a list of pokemon
+         * @return
+         */
+        public List<Pokemon> pokemons() {
+            return data.pokemon_v2_pokemon().stream()
+                    .map(e-> new Pokemon(e.name, e.id))
+                    .toList();
+        }
+    }
+
 
     public PokemonServices(WebClient webClient,@Value("${pokemon.top.count}") int maxPokemonCount) {
         this.webClient = webClient;
@@ -130,31 +147,6 @@ public class PokemonServices {
                 .retrieve()
                 .bodyToMono(byte[].class);
         return imageBytesMono.block();
-    }
-
-
-    private record GraphQLPokemonResponse(Data data) {
-        record Data(List<PokemonEntry> pokemon_v2_pokemon) {}
-        record PokemonEntry(String name, int id) {
-            /**
-             * Convert PokemonEntry to pokemon
-             * @return
-             */
-            Pokemon toPokemon() {
-                String url = "https://pokeapi.co/api/v2/pokemon/" + id;
-                return new Pokemon(name, url,id);
-            }
-        }
-
-        /**
-         * Get data of data and put it in a list of pokemon
-         * @return
-         */
-        public List<Pokemon> pokemons() {
-            return data.pokemon_v2_pokemon().stream()
-                    .map(PokemonEntry::toPokemon)
-                    .toList();
-        }
     }
 
     /**
