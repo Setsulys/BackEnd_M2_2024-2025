@@ -141,7 +141,7 @@ public class PokemonServices {
      * @param pokemon
      * @return
      */
-    public byte[] downloadbyteImage(Pokemon pokemon){
+    private byte[] downloadbyteImage(Pokemon pokemon){
         Mono<byte[]> imageBytesMono = webClient.get()
                 .uri(getImageUrl(pokemon))
                 .retrieve()
