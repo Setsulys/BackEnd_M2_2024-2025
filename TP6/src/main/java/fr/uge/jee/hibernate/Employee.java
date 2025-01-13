@@ -9,6 +9,7 @@ import java.util.Objects;
 public class Employee {
     @Id
     @GeneratedValue
+    @Column(name="EmployeeID")
     private long id;
     @Column(name="fistname")
     private String firstName;
@@ -24,17 +25,11 @@ public class Employee {
         this.salary=salary;
     }
 
-    public long getId() {
-        return id;
-    }
+    public long getId() {return id;}
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() {return firstName;}
 
-    public String getLastName() {
-        return lastName;
-    }
+    public String getLastName() {return lastName;}
 
     public int getSalary() {
         return salary;
@@ -44,13 +39,9 @@ public class Employee {
         this.salary = salary;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public void setFirstName(String firstName) {this.firstName = firstName;}
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public void setLastName(String lastName) {this.lastName = lastName;}
 
     @Override
     public String toString() {

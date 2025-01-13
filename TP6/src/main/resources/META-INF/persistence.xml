@@ -21,10 +21,13 @@
             <property name="jakarta.persistence.schema-generation.database.action"
                       value="drop-and-create"/>
 
+            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform" />
+
             <!-- SQL statement logging -->
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.highlight_sql" value="true"/>
+
 
         </properties>
 
