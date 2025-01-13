@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.Arrays;
 
@@ -15,10 +16,11 @@ public class Application {
     }
 
     @Bean
-    public CommandLineRunner printAllBeans(ApplicationContext applicationContext) {
+    public CommandLineRunner printStudent(ApplicationContext applicationContext) {
         return args -> {
-            var bean =applicationContext.getBean(StudentController.class).getStudent(1);
-            System.out.println(bean);
+            WebClient webClient = WebClient.create();
+            var student =webClient.get().uri("http://localhost:8080/students/1").retrieve().bodyToMono(Student.class).block();
+            System.out.println(student);
         };
     }
 }
