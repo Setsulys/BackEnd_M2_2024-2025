@@ -18,21 +18,26 @@ public class EmployeeRepository {
      */
 
     public long create(String firstName, String lastName, int salary) {
-        var em= entityManagerFactory.createEntityManager();
-        var tx = em.getTransaction();
-        try{
-            tx.begin();
+//        var em= entityManagerFactory.createEntityManager();
+//        var tx = em.getTransaction();
+//        try{
+//            tx.begin();
+//            var employee = new Employee(firstName,lastName,salary);
+//            em.persist(employee);
+//            tx.commit();
+//        }catch(Exception e){
+//            tx.rollback();
+//            throw e;
+//        }
+//        finally {
+//            em.close();
+//            return 0L;
+//        }
+        PersistenceUtils.inTransaction(em->{
             var employee = new Employee(firstName,lastName,salary);
             em.persist(employee);
-            tx.commit();
-        }catch(Exception e){
-            tx.rollback();
-            throw e;
-        }
-        finally {
-            em.close();
-            return 0L;
-        }
+        });
+        return 0L;
     }
 
     /**
@@ -61,25 +66,6 @@ public class EmployeeRepository {
      */
 
     public boolean update(long id, int salary) {
-        //TODO
-//        var em= entityManagerFactory.createEntityManager();
-//        var tx = em.getTransaction();
-//        try{
-//            tx.begin();
-//            var employee = em.find(Employee.class,id);
-//
-//            if (employee!=null){
-//                employee.setSalary(salary);
-//                System.out.println(employee); // print student with id 1
-//            }
-//            tx.commit();
-//            return true;
-//        } catch (Exception e){
-//            tx.rollback();
-//            return false;
-//        } finally {
-//            em.close();
-//        }
         PersistenceUtils.inTransaction(em->{
             var employee = em.find(Employee.class,id);
             if(employee!=null){
@@ -112,7 +98,7 @@ public class EmployeeRepository {
      */
 
     public List<Employee> getAll() {
-        
+
         return null;
     }
 
